@@ -9525,23 +9525,25 @@ database:del(bot_id.."my_photo:status"..msg.chat_id_)
 send(msg.chat_id_, msg.id_,"  ✯  تم تعطيل الصوره") 
 return false end
 end
- if text == "الرابط" then 
+if text == "الرابط" then 
 local status_Link = database:get(bot_id.."Link_Group:status"..msg.chat_id_) 
 if not status_Link then 
 send(msg.chat_id_, msg.id_,"الرابط معطل")  
 return false   
 end 
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-local linkgpp = jsondecode(https.request('https:/api.telegram.org/bot'..token..'/exportChatInviteLinkchat_id='..msg.chat_id_)) or database:get(bot_id..Private:Group:Link".msg.chat_id_) 
-if linkgppok == true then 
-local Teext = '✧'..ta.title_..'\n'..linkgpp.result 
-local inline = {{{text = ta.title, url=linkgpp.result}}} 
-send_inline_key(msg.chat_id_,Text,,inline,msg.id_/2097152/05) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or database:get(bot_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local Teext = '✯'..ta.title_..'\n'..linkgpp.result 
+linkgp = '┉ ┉ ┉ ┉ ┉ ┉ ┉\n ['..ta.title_..']('..linkgpp.result..')'
+local inline = {{{text = ta.title_, url=linkgpp.result}},} 
+send_inline_key(msg.chat_id_,Teext,nil,inline,msg.id_/2097152/0.5) 
 else 
-send(msg.chat_id_, msg.id_,'✧لا يوجد رابط ارسل ضع رابط') 
+send(msg.chat_id_, msg.id_,'✯لا يوجد رابط ارسل ضع رابط') 
 end 
 end,nil) 
 end
+
 if text == 'مسح الرابط' or text == 'حذف الرابط' then
 if Mod(msg) then     
 if AddChannel(msg.sender_user_id_) == false then
@@ -12129,7 +12131,7 @@ end
 if text == 'تغير الايدي' and Manager(msg) then 
 local List = {
 [[
-゠𝚄𝚂𝙴𝚁 𖨈 #username 𖥲 .
+゠𝚄??𝙴𝚁 𖨈 #username 𖥲 .
 ゠??𝚂𝙶 𖨈 #msgs 𖥲 .
 ゠𝚂𝚃𝙰 𖨈 #stast 𖥲 .
 ゠𝙸𝙳 𖨈 #id 𖥲 .
@@ -15290,7 +15292,7 @@ end
 if text == "تفعيل مريم"  then
 if Constructor(msg) then  
 database:set(bot_id.."my_maryam:status"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_,"✧تـم تـفعـيل مريم") 
+send(msg.chat_id_, msg.id_,"✯تـم تـفعـيل مريم") 
 return false  
 end
 end
@@ -15298,13 +15300,13 @@ end
 if text == "تعطيل مريم"  then
 if Constructor(msg) then  
 database:del(bot_id.."my_maryam:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,"✧تـم تـعـطـيل مريم") 
+send(msg.chat_id_, msg.id_,"✯تـم تـعـطـيل مريم") 
 return false end
 end
 if text == "مريم" then
 local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_,"✧مريم  معطله") 
+send(msg.chat_id_, msg.id_,"✯مريم  معطله") 
 return false  
 end
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
@@ -15436,7 +15438,7 @@ end
 if text == "تفعيل اللعبه"  then
 if Constructor(msg) then  
 database:set(bot_id.."my_maryam:status"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_,"✧تـم تـفعـيل اللعبه") 
+send(msg.chat_id_, msg.id_,"✯تـم تـفعـيل اللعبه") 
 return false  
 end
 end
@@ -15444,13 +15446,13 @@ end
 if text == "تعطيل اللعبه"  then
 if Constructor(msg) then  
 database:del(bot_id.."my_maryam:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,"✧تـم تـعـطـيل اللعبه") 
+send(msg.chat_id_, msg.id_,"✯تـم تـعـطـيل اللعبه") 
 return false end
 end
 if text == "صرخه الموت" or text == "صخرة الموت" then
 local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_,"✧اللعبه معطله") 
+send(msg.chat_id_, msg.id_,"✯اللعبه معطله") 
 return false  
 end
 if not database:get(bot_id.. lock:add ..msg.chat_id_) then
