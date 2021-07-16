@@ -9534,16 +9534,15 @@ end
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or database:get(bot_id.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local Teext = '✯'..ta.title_..'\n'..linkgpp.result 
+local Teext = '✧'..ta.title_..'\n'..linkgpp.result 
 linkgp = '┉ ┉ ┉ ┉ ┉ ┉ ┉\n ['..ta.title_..']('..linkgpp.result..')'
 local inline = {{{text = ta.title_, url=linkgpp.result}},} 
 send_inline_key(msg.chat_id_,Teext,nil,inline,msg.id_/2097152/0.5) 
 else 
-send(msg.chat_id_, msg.id_,'✯لا يوجد رابط ارسل ضع رابط') 
+send(msg.chat_id_, msg.id_,'✧لا يوجد رابط ارسل ضع رابط') 
 end 
 end,nil) 
 end
-
 if text == 'مسح الرابط' or text == 'حذف الرابط' then
 if Mod(msg) then     
 if AddChannel(msg.sender_user_id_) == false then
