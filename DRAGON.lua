@@ -9532,7 +9532,7 @@ send(msg.chat_id_, msg.id_,"الرابط معطل")
 return false   
 end 
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-local linkgpp = jsondecode(https.request('https:/api.telegram.org/bot'..token../exportChatInviteLinkchat_id='..msg.chat_id_)) or database:get(bot_id..Private:Group:Link".msg.chat_id_) 
+local linkgpp = jsondecode(https.request('https:/api.telegram.org/bot'..token..'/exportChatInviteLinkchat_id='..msg.chat_id_)) or database:get(bot_id..Private:Group:Link".msg.chat_id_) 
 if linkgppok == true then 
 local Teext = '✧'..ta.title_..'\n'..linkgpp.result 
 local inline = {{{text = ta.title, url=linkgpp.result}}} 
