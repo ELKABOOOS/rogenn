@@ -2751,9 +2751,10 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{text = '𝐝𝐞𝐯 𝐦𝐚𝐫𝐭𝐞𝐧', url="t.me/I_C_X"}},{{text = '𝐝𝐞𝐯 𝐞𝐥𝐤𝐚𝐛𝐨𝐨𝐬', url="t.me/G_W_P"}},
+{{text = '𝐝𝐞𝐯 𝐦𝐚𝐫𝐭𝐞𝐧', url="t.me/I_C_X"}},{{text = '𝐝𝐞𝐯 𝐞𝐥𝐤𝐚𝐛𝐨𝐨𝐬', url="t.me/G_W_P"}},
 {{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}},
 }
+
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ROGEN&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -2763,7 +2764,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{text = '𝐝𝐞𝐯 𝐦𝐚𝐫𝐭𝐞𝐧', url="t.me/I_C_X"}},{{text = '𝐝𝐞𝐯 𝐞𝐥𝐤𝐚𝐛𝐨𝐨𝐬', url="t.me/G_W_P"}},
+{{text = '𝐝𝐞𝐯 𝐦𝐚𝐫𝐭𝐞𝐧', url="t.me/I_C_X"}},{{text = '𝐝𝐞𝐯 𝐞𝐥𝐤𝐚𝐛𝐨𝐨𝐬', url="t.me/G_W_P"}},
 {{text = '𝐭𝐰𝐚𝐬𝐞𝐥 𝐫𝐨𝐨𝐠𝐞𝐧',url="t.me/TW_ROGEN_BOT"}},
 {{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}},
 }
@@ -12916,7 +12917,7 @@ Msᴀɢ ~ #msgs
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
 𓁷 - 𝙞𝙙 †: #id 𓀀 .
-𓁷 - 𝗖𝗛 - @SO_ROGEN ✯
+𓁷 - ??𝗛 - @SO_ROGEN ✯
 ]],
 [[
 𖡋 𝐔𝐒𝐄 #username 
