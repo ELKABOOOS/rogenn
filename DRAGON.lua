@@ -2741,7 +2741,7 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'روجين' then
+if text == 'سورس' or text == 'يا سورس' or text == 'السورس' then
 local Text = [[
 ╭──── ● « 𝐫 𝐨 𝐨 𝐠 𝐞 𝐧 » ● ────╮
 𝐰𝐞𝐥𝐜𝐨𝐦 𝐨𝐧 𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧
@@ -2755,8 +2755,9 @@ keyboard.inline_keyboard = {
 {{text = '𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐨𝐠𝐞𝐧', url="t.me/SO_ROGEN"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ROGEN&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ROGEN&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
 local Text = [[
 ]]
