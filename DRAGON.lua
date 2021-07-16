@@ -15455,7 +15455,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"✯اللعبه معطله") 
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"اهلا بك عزيزي في صخره الموت😈 ❲لو حابب تكمل أرسل يلا بينا❳"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15465,7 +15465,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" أنت الان داخل اللعبه😈 ❲لو هتكمل ارسل هيا لنبدأ ❳"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15475,7 +15475,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" يا اصدقائي هذا البيت رائع هيا لنستكشفه😈 ❲لو موافق ارسل هيا❳"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15495,7 +15495,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" يجب ان نستكشف المكان ونجد طريق للخروج فلنتفرق ونتجمع هنا خلال نصف ساعه ❲لو موافق ارسل هيا❳"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15505,7 +15505,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" يا اصدقاء لقد قفل الباب عني لا استطيع الخروج ❲لو موافق ارسل يلا نساعده❳"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15515,7 +15515,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" الان مكتوب علي الباب لغز لازم نحله والا هيموت صاحبنا ❲لو موافق ارسل يلا نحله بسرعه❳"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15525,7 +15525,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" الان ما هوا الرقم الي يقبل الضرب في  15 ويكون ناتجه 60"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15535,7 +15535,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"مبروك لقد فازت ونجوت من العقاب 👻🌟(لو حابب تكمل ارسل يلا)"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15555,7 +15555,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" الان لنذهب الي الدور الاخير ونستكشفه لو هتكمل ارسل موافق"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15565,7 +15565,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" انه مكان رائع لكن مخيف اريد الخروج الا الخارج ساعدوني للخروج لو هتكمل ارسل يلا نخرج"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15575,7 +15575,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" تعالو نروح نشوف الغرفه دي يمكن نلاقي حاجه تساعدنا لو هتكمل ارسل يلا نروح"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15585,7 +15585,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" ما هذا المكان...يا اصدقاء ساعدونييي(لو هتكمل ارسل في اي)"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15595,7 +15595,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" انا محبوس مش عارف اخرج  وعندي ورقه فيها شفرها ومكتوب ان في فرصتين لو معرفتوش تحلوها هتقع عليا طوبه(لو هتكمل ارسل اي الشفره دي)"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
@@ -15605,7 +15605,7 @@ local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 return false  
 end
-if not database:get(bot_id.. lock:add ..msg.chat_id_) then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" الورقه بتقول... ما هوا الحيوان بيعيش فالبحر وبيساعد الناس لما تغرق ومكون من 6حروف"}
 send(msg.chat_id_, msg.id_,   ..texting[math.random(#texting)]..  )
 end
